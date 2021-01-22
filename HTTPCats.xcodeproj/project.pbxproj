@@ -3,27 +3,56 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E4956A0425B822CA0067E20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4956A0325B822CA0067E20D /* AppDelegate.swift */; };
 		E4956A0625B822CA0067E20D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4956A0525B822CA0067E20D /* SceneDelegate.swift */; };
-		E4956A0825B822CA0067E20D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4956A0725B822CA0067E20D /* ViewController.swift */; };
 		E4956A0B25B822CA0067E20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4956A0925B822CA0067E20D /* Main.storyboard */; };
 		E4956A0D25B822CC0067E20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4956A0C25B822CC0067E20D /* Assets.xcassets */; };
 		E4956A1025B822CC0067E20D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4956A0E25B822CC0067E20D /* LaunchScreen.storyboard */; };
+		E4F662F525B98CA30001B16F /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F662F425B98CA30001B16F /* ViewState.swift */; };
+		E4F662F925B98CA90001B16F /* StatefulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F662F825B98CA90001B16F /* StatefulViewController.swift */; };
+		E4F662FC25B98CAF0001B16F /* BaseStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F662FB25B98CAF0001B16F /* BaseStateView.swift */; };
+		E4F662FF25B98CB20001B16F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F662FE25B98CB20001B16F /* LoadingView.swift */; };
+		E4F6630225B98CB70001B16F /* FailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6630125B98CB70001B16F /* FailureView.swift */; };
+		E4F6630525B98CBB0001B16F /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6630425B98CBB0001B16F /* EmptyView.swift */; };
+		E4F6630925B98D450001B16F /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6630825B98D450001B16F /* UIView+Autolayout.swift */; };
+		E4F6630D25B98DC30001B16F /* CatsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6630C25B98DC30001B16F /* CatsCollectionViewController.swift */; };
+		E4F6631025B98F800001B16F /* HTTPCatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6630F25B98F800001B16F /* HTTPCatItem.swift */; };
+		E4F6631C25B994F70001B16F /* HTTPCatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6631A25B994F70001B16F /* HTTPCatCollectionViewCell.swift */; };
+		E4F6631D25B994F70001B16F /* HTTPCatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F6631B25B994F70001B16F /* HTTPCatCollectionViewCell.xib */; };
+		E4F6632625B996670001B16F /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6632325B996670001B16F /* Identifiable.swift */; };
+		E4F6632725B996670001B16F /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6632425B996670001B16F /* ReusableCell.swift */; };
+		E4F6632825B996670001B16F /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F6632525B996670001B16F /* NibInstantiatable.swift */; };
+		E4F6632C25B9972B0001B16F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E4F6632B25B9972B0001B16F /* Kingfisher */; };
+		E4F6633025B99B380001B16F /* httpcats.json in Resources */ = {isa = PBXBuildFile; fileRef = E4F6632F25B99B380001B16F /* httpcats.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E4956A0025B822CA0067E20D /* StatefulViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatefulViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4956A0025B822CA0067E20D /* HTTPCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTPCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4956A0325B822CA0067E20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4956A0525B822CA0067E20D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4956A0725B822CA0067E20D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E4956A0A25B822CA0067E20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4956A0C25B822CC0067E20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4956A0F25B822CC0067E20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4956A1125B822CC0067E20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F662F425B98CA30001B16F /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		E4F662F825B98CA90001B16F /* StatefulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulViewController.swift; sourceTree = "<group>"; };
+		E4F662FB25B98CAF0001B16F /* BaseStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStateView.swift; sourceTree = "<group>"; };
+		E4F662FE25B98CB20001B16F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		E4F6630125B98CB70001B16F /* FailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureView.swift; sourceTree = "<group>"; };
+		E4F6630425B98CBB0001B16F /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		E4F6630825B98D450001B16F /* UIView+Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		E4F6630C25B98DC30001B16F /* CatsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsCollectionViewController.swift; sourceTree = "<group>"; };
+		E4F6630F25B98F800001B16F /* HTTPCatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCatItem.swift; sourceTree = "<group>"; };
+		E4F6631A25B994F70001B16F /* HTTPCatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPCatCollectionViewCell.swift; sourceTree = "<group>"; };
+		E4F6631B25B994F70001B16F /* HTTPCatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTTPCatCollectionViewCell.xib; sourceTree = "<group>"; };
+		E4F6632325B996670001B16F /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		E4F6632425B996670001B16F /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		E4F6632525B996670001B16F /* NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
+		E4F6632F25B99B380001B16F /* httpcats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = httpcats.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F6632C25B9972B0001B16F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +78,7 @@
 		E4956A0125B822CA0067E20D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4956A0025B822CA0067E20D /* StatefulViewController.app */,
+				E4956A0025B822CA0067E20D /* HTTPCats.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,21 +88,67 @@
 			children = (
 				E4956A0325B822CA0067E20D /* AppDelegate.swift */,
 				E4956A0525B822CA0067E20D /* SceneDelegate.swift */,
-				E4956A0725B822CA0067E20D /* ViewController.swift */,
+				E4F6630725B98D2E0001B16F /* Extensions */,
+				E4F662F225B98C750001B16F /* Base Stateful */,
+				E4F662F325B98C7B0001B16F /* Example Screens */,
 				E4956A0925B822CA0067E20D /* Main.storyboard */,
 				E4956A0C25B822CC0067E20D /* Assets.xcassets */,
+				E4F6632F25B99B380001B16F /* httpcats.json */,
 				E4956A0E25B822CC0067E20D /* LaunchScreen.storyboard */,
 				E4956A1125B822CC0067E20D /* Info.plist */,
 			);
 			path = StatefulViewController;
 			sourceTree = "<group>";
 		};
+		E4F662F225B98C750001B16F /* Base Stateful */ = {
+			isa = PBXGroup;
+			children = (
+				E4F662F425B98CA30001B16F /* ViewState.swift */,
+				E4F662F825B98CA90001B16F /* StatefulViewController.swift */,
+				E4F662FB25B98CAF0001B16F /* BaseStateView.swift */,
+				E4F662FE25B98CB20001B16F /* LoadingView.swift */,
+				E4F6630125B98CB70001B16F /* FailureView.swift */,
+				E4F6630425B98CBB0001B16F /* EmptyView.swift */,
+			);
+			path = "Base Stateful";
+			sourceTree = "<group>";
+		};
+		E4F662F325B98C7B0001B16F /* Example Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E4F6630C25B98DC30001B16F /* CatsCollectionViewController.swift */,
+				E4F6630F25B98F800001B16F /* HTTPCatItem.swift */,
+				E4F6631F25B994FA0001B16F /* Cell */,
+			);
+			path = "Example Screens";
+			sourceTree = "<group>";
+		};
+		E4F6630725B98D2E0001B16F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4F6632325B996670001B16F /* Identifiable.swift */,
+				E4F6632525B996670001B16F /* NibInstantiatable.swift */,
+				E4F6632425B996670001B16F /* ReusableCell.swift */,
+				E4F6630825B98D450001B16F /* UIView+Autolayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4F6631F25B994FA0001B16F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E4F6631A25B994F70001B16F /* HTTPCatCollectionViewCell.swift */,
+				E4F6631B25B994F70001B16F /* HTTPCatCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E49569FF25B822CA0067E20D /* StatefulViewController */ = {
+		E49569FF25B822CA0067E20D /* HTTPCats */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4956A1425B822CC0067E20D /* Build configuration list for PBXNativeTarget "StatefulViewController" */;
+			buildConfigurationList = E4956A1425B822CC0067E20D /* Build configuration list for PBXNativeTarget "HTTPCats" */;
 			buildPhases = (
 				E49569FC25B822CA0067E20D /* Sources */,
 				E49569FD25B822CA0067E20D /* Frameworks */,
@@ -82,9 +158,12 @@
 			);
 			dependencies = (
 			);
-			name = StatefulViewController;
+			name = HTTPCats;
+			packageProductDependencies = (
+				E4F6632B25B9972B0001B16F /* Kingfisher */,
+			);
 			productName = StatefulViewController;
-			productReference = E4956A0025B822CA0067E20D /* StatefulViewController.app */;
+			productReference = E4956A0025B822CA0067E20D /* HTTPCats.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E49569FB25B822CA0067E20D /* Build configuration list for PBXProject "StatefulViewController" */;
+			buildConfigurationList = E49569FB25B822CA0067E20D /* Build configuration list for PBXProject "HTTPCats" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,11 +189,14 @@
 				Base,
 			);
 			mainGroup = E49569F725B822CA0067E20D;
+			packageReferences = (
+				E4F6632A25B9972B0001B16F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = E4956A0125B822CA0067E20D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E49569FF25B822CA0067E20D /* StatefulViewController */,
+				E49569FF25B822CA0067E20D /* HTTPCats */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +208,8 @@
 			files = (
 				E4956A1025B822CC0067E20D /* LaunchScreen.storyboard in Resources */,
 				E4956A0D25B822CC0067E20D /* Assets.xcassets in Resources */,
+				E4F6631D25B994F70001B16F /* HTTPCatCollectionViewCell.xib in Resources */,
+				E4F6633025B99B380001B16F /* httpcats.json in Resources */,
 				E4956A0B25B822CA0067E20D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +221,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4956A0825B822CA0067E20D /* ViewController.swift in Sources */,
+				E4F6631C25B994F70001B16F /* HTTPCatCollectionViewCell.swift in Sources */,
+				E4F6630525B98CBB0001B16F /* EmptyView.swift in Sources */,
+				E4F662FC25B98CAF0001B16F /* BaseStateView.swift in Sources */,
 				E4956A0425B822CA0067E20D /* AppDelegate.swift in Sources */,
+				E4F662F925B98CA90001B16F /* StatefulViewController.swift in Sources */,
+				E4F662F525B98CA30001B16F /* ViewState.swift in Sources */,
+				E4F6632625B996670001B16F /* Identifiable.swift in Sources */,
+				E4F662FF25B98CB20001B16F /* LoadingView.swift in Sources */,
+				E4F6630925B98D450001B16F /* UIView+Autolayout.swift in Sources */,
 				E4956A0625B822CA0067E20D /* SceneDelegate.swift in Sources */,
+				E4F6630D25B98DC30001B16F /* CatsCollectionViewController.swift in Sources */,
+				E4F6630225B98CB70001B16F /* FailureView.swift in Sources */,
+				E4F6632825B996670001B16F /* NibInstantiatable.swift in Sources */,
+				E4F6632725B996670001B16F /* ReusableCell.swift in Sources */,
+				E4F6631025B98F800001B16F /* HTTPCatItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,11 +385,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 445RDPUPND;
 				INFOPLIST_FILE = StatefulViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.sketch.StatefulViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = me.sketch.HTTPCats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,11 +405,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 445RDPUPND;
 				INFOPLIST_FILE = StatefulViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.sketch.StatefulViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = me.sketch.HTTPCats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +420,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E49569FB25B822CA0067E20D /* Build configuration list for PBXProject "StatefulViewController" */ = {
+		E49569FB25B822CA0067E20D /* Build configuration list for PBXProject "HTTPCats" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4956A1225B822CC0067E20D /* Debug */,
@@ -331,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4956A1425B822CC0067E20D /* Build configuration list for PBXNativeTarget "StatefulViewController" */ = {
+		E4956A1425B822CC0067E20D /* Build configuration list for PBXNativeTarget "HTTPCats" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4956A1525B822CC0067E20D /* Debug */,
@@ -341,6 +439,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4F6632A25B9972B0001B16F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4F6632B25B9972B0001B16F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4F6632A25B9972B0001B16F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E49569F825B822CA0067E20D /* Project object */;
 }
